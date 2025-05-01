@@ -1,0 +1,7 @@
+
+
+windows:
+    cd foldername (go to folder)
+    cd ..         (go to back)
+    clear         (clear console)
+github:

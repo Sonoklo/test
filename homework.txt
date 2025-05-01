@@ -1,0 +1,46 @@
+1 - Доработать возможность запуска бота из урока 41
+2 - Доработать проблему если не находит картинку по описанию
+3 - Доработать кнопки листания влево и вправо (Должна быть хронология) 
+4 - Загрузить бота крестики нолики и бота с картинами в 2 разные репозитория на гитхаб
+
+
+
+page_actual = 1
+per_page    = 20
+
+max_pages   = total / per_page
+img_actual  = 1
+
+
+
+================
+action - left
+
+page_actual -> 1
+img_actual  -> 1
+
+request last page
+img_actual  -> 20
+
+
+================
+action - right
+
+page_actual - (max_pages)
+img_actual  - 20
+
+request first page
+img_actual  -> 1
+
+
+================
+action - right
+page_actual -> 1
+img_actual  -> 1
+
+img_actual += 1 
+...
+img_actual == 20
+
+request page_actual + 1
+img_actual = 1
